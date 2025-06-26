@@ -12,7 +12,7 @@ namespace Presupuestos.Models
         [Display(Name = "Nombre del Tipo de Cuenta")]
         [PrimeraLetraMayuculaAtributte]
         [Remote(action: "VerificarExisteTipoCuenta", controller: "TiposCuentas")]
-        public string? Nombre { get; set; } //ctrl + R para renombrar
+        public string Nombre { get; set; } //ctrl + R para renombrar
         public int UsuarioId { get; set; }
         public int Orden { get; set; }
 
